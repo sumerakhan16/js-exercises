@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<script>
+// Exercise 1: Adding Integers
+    var input=prompt("Please enter all values to be added, seperated by spaces")
+    var arr = input.split(" ");
+    var sum= 0;
+
+    arr.forEach(element => sum += parseInt(element));
+    console.log("sum of values: " + sum)
+
+// Calculator
+var arr =prompt("Please enter all values to be added, seperated by + or -").split(";");
+arr.pop();
+var string = arr.toString();
+string = string.replace(/\s/g, '');
+var total = eval(string)
+console.log("total is", total);
+
+</script>
+<body>
+
+
+
+</body>
+</html>
